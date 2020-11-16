@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+
+}
+
+:root {
+    --ci1: #33658A;
+    --ci2: #86BBD8;
+    --ci3: #758E4F;
+    --ci4: #F6AE2D;
+    --ci5: #F26419;
+    --link: var(--ci1);
+    --link-hover: var(--ci2);
+    --btn-bg: var(--ci1);
+    --btn-bg-hover: var(--ci2);
+    --nav-link: var(--ci1);
+    --nav-hover: var(--ci2);
+    --bg-color: #fff;
+    --text-color: #242C5B;
+    --box-shadow: 0 0 0 1px rgba(0, 0, 0, .04), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    --round: 5px;
+    --font-kanit: 'Kanit', sans-serif;
+    --pmr-font: var(--font-kanit);
+    --txt-font: var(--font-anuphan);
+}
+
+#home-sec{
+    position: absolute;
+}
+
+.menu {
+    height: 6%;
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 20;
+}
+
+.logo{
+    position: absolute;
+    top: 2%;
+}
