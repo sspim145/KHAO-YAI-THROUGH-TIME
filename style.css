@@ -1,320 +1,521 @@
 body {
-  background-color: #0A1C00;
-  overflow-x:  hidden;
-  margin: 0;
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: #0a1c00;
+    font-family: 'Kanit', sans-serif;
 }
-h1{
-  color: #F8EFD7;
+
+:root {
+    --ci1: #33658A;
+    /*red bg*/
+    --ci2: #401F1F; 
+    --ci3: #758E4F;
+    --ci4: #F6AE2D;
+    --ci5: #F26419;
+    --link: var(--ci1);
+    --link-hover: var(--ci2);
+    --btn-bg: var(--ci1);
+    --btn-bg-hover: var(--ci2);
+    --nav-link: var(--ci1);
+    --nav-hover: var(--ci2);
+    --bg-color: #fff;
+    --text-color: #F8EFD7;
+    --box-shadow: 0 0 0 1px rgba(0, 0, 0, .04), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    --round: 5px;
+    --pmr-font:  'Kanit',-apple-system, BlinkMacSystemFont, sans-serif !important;
+    --txt-font: 'Sarabun',-apple-system, BlinkMacSystemFont, sans-serif !important;
 }
-section {
-  height: 1080px;
+
+/* space */
+
+.vw-05 {
+  height: 0.5vw !important;
+}
+.vw-1 {
+  height: 1vw !important;
+}
+.vw-2 {
+  height: 2vw !important;
+}
+.vw-3 {
+  height: 3vw !important;
+}
+.vw-4 {
+  height: 4vw !important;
+}
+.vw-5 {
+  height: 5vw !important;
+}
+.vw-30 {
+  height: 30vw !important;
+}
+----------------------------------------------------------------------------------
+
+/* font size */
+
+.fs-40{
+  font-size: 3.458716731770833vw !important;
+}
+.fs-50{
+  font-size: 1.6vw !important;
+}
+.fs-80{
+  font-size: 4vw !important;
+}
+.fs-100{
+  font-size: 5vw !important;
+}
+.fs-150{
+  font-size: 7.5vw !important;
+}
+.fs-200{
+  font-size: 10vw !important;
+}
+
+40 pt = 3.458716731770833vw   |
+50 pt = 4.3233959635416666vw  |
+80 pt = 6.917433528645834vw   |
+100 pt = 8.646791861979166vw  |
+150 pt = 12.970187825520833vw |
+200 pt = 17.293583789062502vw | 20 px = 13.020833333333334vw
+
+--------------------------------------------------------------------------------------
+#home {
+  position: absolute;
+  left: 0%;
+  z-index: 2;
+}
+
+#p1 {
   position: relative;
-/*  box-sizing: border-box;*/
-  margin: 0;
-}
-.menu {
-  height: 6%;
-  margin: 1%;
-  position: fixed;
-  right: 1em;
-  top: 1em;
+  height: 56vw;
   z-index: 20;
 }
-.khaoyai{
-  margin-top: 2%;
+#logo {
+  left: 30%;
+  width: 25vw;
 }
-.trash1{
-  width: 60%;
-  z-index: -3;
+
+.g1 {
   position: absolute;
-  left: -23em;
-  top: 15em;
-}
-.trash2{
-  width: 60%;
-  z-index: -3;
-  position: absolute;
-  right: -30em;
-  top: 15em;
-}
-.mt1{
-  position: absolute;
+  top: 7vw;
   width: 100%;
-  z-index: -2; 
-}
-.bird{
-  height: auto;
-  position: absolute;
-  width: 35%;
-  right: -5%;
-  margin-top: -8.2%;
   z-index: 0;
 }
-.elep1{
-  width: 60%;
+
+#p1-text-1 {
+  font-size: 1.8vw;
 }
-.leo {
-    width: 40%;
-    right: 30%;
-    top: 50%;
-    margin-top: 25%;
-    z-index: 10
+
+#p1-text-2 {
+  font-size: 2.5vw;
+}
+
+#arrow {
+  position: absolute;
+  left: 15vw;
+  z-index: 2;
+  animation: swing 0.7s ease-in-out 0s infinite alternate both;
+  animation-iteration-count: infinite;
+}
+
+#arrow img {
+  width: 2vw;
+}
+
+@keyframes swing {
+  0% {
+    top: 90%;
   }
-.txt1 {
-   width: 40%;
-   margin-top:20%;
+  100% {
+    top: 91%;
+  }
 }
-.scrD {
-  width: 10%;
+
+#menu {
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  z-index: 5;
+  width: 50px;
 }
-.arrow {
-  width: 2%;
-}
+
 #elep1 {
-  position: absolute;
-  left: -700px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: left 0.6s; /* Transition effect when sliding down (and up) */
-}
-
-#leo {
-  position: absolute;
-  left: 1100px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: left 0.6s; /* Transition effect when sliding down (and up) */
-}
-.text1 {
   width: 60%;
-  z-index: -3;
   position: absolute;
-  left: 14em;
-  top: 0em;
+  top: 25%;
+  left: -50%;
+  transition: left 0.6s;
 }
-
-.text2 {
+#leo {
   width: 35%;
-  z-index: -1;
+  top: 70%;
+  right: -40%;
   position: absolute;
-  left: 18em;
-  top: 15em;
+  transition: right 0.6s;
 }
 
-.map {
-  width: 50%;
-  z-index: -3;
-  position: absolute;
-  right: 0.3em;
-  top: 9em;
+/*  page 2 up */
+#p2 {
+  background-color: #65d1e5;
+  height: 91vw;
+  padding: 1vw;
 }
 
-.tiger2 {
-  width: 35%;
-  z-index: -5;
-  position: absolute;
-  left: 10em;
-  bottom: 40em;
+#p2-text-1 {
+  color: black;
+  font-size: 5.2vw;
+  font-stretch: 100%;
+}
+#p2-text-2 {
+  color: black;
+  font-size: 2.4vw;
+  font-stretch: 100%;
 }
 
-.monkey2 {
-  width: 20%;
-  z-index: -3;
-  position: absolute;
-  right: 0em;
-  bottom: 48em;
+#map {
+  width: 45vw;
 }
-
-.mt2 {
-  height: auto;
+.g2 {
   position: absolute;
+  top: 87.3vw;
   width: 100%;
-  z-index: -3;
-  bottom: 16em;
-}
-
-.mt3 {
-  height: auto;
-  position: absolute;
-  width: 100%;
-  z-index: -2;
-  bottom: 10em;
-}
-
-.eleplant3 {
-  width: 95%;
-  z-index: -1;
-  position: absolute;
-  left: -23em;
-  top: -45em;
-}
-
-.trash3 {
-  width: 95%;
-  z-index: -2;
-  position: absolute;
-  left: -52em;
-  top: -18em;
-}
-
-.textp3 {
-  width: 35%;
-  z-index: -1;
-  position: absolute;
-  right: 4em;
-  top: -7em;
-}
-
-.leopardp3 {
-  width: 35%;
-  z-index: -1;
-  position: absolute;
-  right: 0em;
-  top: 1em;
-  overflow-x: hidden;
-}
-
-.textp3-2 {
-  width: 55%;
-  z-index: -1;
-  position: absolute;
-  left: 9em;
-  top: 20em;
-}
-
-.textp3-3 {
-  width: 35%;
-  z-index: -1;
-  position: absolute;
-  left: 9em;
-  top: 28em;
-}
-
-.textp3-4 {
-  width: 30%;
-  z-index: -1;
-  position: absolute;
-  right: 24em;
-  top: 29em;
-}
-.textp3-5 {
-  width: 24%;
-  z-index: -1;
-  position: absolute;
-  right: 24em;
-  top: 36em;
-}
-.textp3-6 {
-  width: 22%;
-  z-index: -1;
-  position: absolute;
-  right: 24em;
-  top: 41.5em;
-}
-.textp3-7 {
-  width: 20%;
-  z-index: -1;
-  position: absolute;
-  right: 24em;
-  top: 47em;
-}
-.textp3-8 {
-  width: 18%;
-  z-index: -1;
-  position: absolute;
-  right: 24em;
-  top: 52em;
-}
-.bluedeerp5 {
-  width: 80%;
-  z-index: -1;
-  position: absolute;
-  left: -35em;
-  top: -30em;
-}
-.greenmoutainp5 {
-  width: 53%;
-  z-index: -2;
-  position: absolute;
-  left: -1em;
-  top: -11em;
-}
-.trashp5 {
-  width: 95%;
-  z-index: -2;
-  position: absolute;
-  left: -23em;
-  top: -3em;
-}
-
-.textp5-1 {
-  width: 35%;
-  z-index: -2;
-  position: absolute;
-  right: 9em;
-  top: -10em;
-}
-.textp5-2 {
-  width: 9%;
-  z-index: -2;
-  position: absolute;
-  right: 12em;
-  top: 4em;
-}
-.textp5-3 {
-  width: 12%;
-  z-index: -2;
-  position: absolute;
-  right: 10em;
-  top: -1em;
-}
-.greenmountains5-1 {
-  width: 100%;
-  z-index: -4;
-  position: absolute;
-  left: -1em;
-  top: 27em;
-}
-.deerp5-1 {
-  width: 30%;
   z-index: 0;
-  position: absolute;
-  left: 3em;
-  top: 35em;
-}
-.deerp5-2 {
-  width: 30%;
-  z-index: 0;
-  position: absolute;
-  left: 33em;
-  top: 35em;
-}
-.deerp5-3 {
-  width: 30%;
-  z-index: 0;
-  position: absolute;
-  right: 3em;
-  top: 35em;
+  left: 0vw;
 }
 
-.textp5-4 {
+#p2-text-3 {
+  color: black;
+  font-size: 2.4vw;
+  font-stretch: 100%;
+}
+/*  page 3 up */
+#p3 {
+  background-color: #401f1f;
+  height: 50vw;
+  padding: 1vw;
+}
+#p3-text-1 {
+  font-size: 2.4vw;
+  line-height: 1.85;
+}
+#p3-text-2 {
+  font-size: 4.4vw;
+  line-height: 1.35;
+}
+#p3-text-3 {
+  font-size: 1.7vw;
+  line-height: 1.45;
+}
+
+.g3 {
+  position: absolute;
+  top: -7vw;
+  width: 20vw;
+  z-index: 1;
+}
+
+#trash {
+  position: absolute;
+  top: -3vw;
+  width: 60vw;
+  z-index: 1;
+  left: -20vw;
+}
+
+#eleplant-p3 {
+  position: absolute;
+  top: -32vw;
+  width: 75vw;
+  z-index: 2;
+  left: -17vw;
+}
+
+#leopard-p3 {
+  position: absolute;
+  top: -14vw;
+  width: 50vw;
+  z-index: 2;
+  left: -10vw;
+}
+
+/*  page 4 up */
+#p4 {
+  background-color: #401f1f;
+  height: 70vw;
+}
+
+.g4-1 {
+  position: absolute;
+  left: -30vw;
+  top: -15vw;
+  width: 70vw;
+  z-index: 1;
+}
+
+.g4-2 {
+  position: absolute;
+  left: -37vw;
+  top: 14vw;
+  width: 100vw;
+  z-index: 1;
+}
+
+#p4-text-1 {
+  text-align: right;
+  font-size: 2.1vw;
+  line-height: 2.15;
+}
+.red {
+  color: #ea424e;
+}
+#p4-text-2 {
+  position: absolute;
+  left: 33vw;
+  width: 10vw;
+  top: 8vw;
+}
+#p4-text-3 {
+  position: absolute;
+  left: 33vw;
+  width: 10vw;
+  top: 9vw;
+}
+
+#p4-text-4 {
+  text-align: left !important;
+  font-size: 2.1vw;
+}
+#deer-p4-1 {
+  position: absolute;
+  left: 12vw;
+  width: 35vw;
+  top: 38vw;
+  z-index: 1;
+}
+#deer-p4-2 {
+  position: absolute;
+  left: 48vw;
+  width: 35vw;
+  top: 38vw;
+  z-index: 1;
+}
+/*  page 5 up */
+#p5 {
+  background-color: #401f1f;
+  height: 61vw;
+}
+
+.g5 {
+  position: absolute;
+  top: -10vw;
+  width: 100%;
+  z-index: 0;
+}
+#p5-text-1 {
+  text-align: right;
+  font-size: 4vw;
+  line-height: 1.1;
+}
+#redtourist-p5 {
+  position: absolute;
+  left: 10vw;
+  width: 25vw;
+  top: 22vw;
+  z-index: 1;
+}
+
+/*  page 6 up */
+#p6{
+    background-color: var(--ci2);
+    position: relative;
+    height: 115vw;
+}
+.ani-p6 {
+    position: absolute;
+    top: 10vw;
+    left: 25vw;
+    width: 75vw;
+    z-index: 0;
+}
+.g6{
+    position: absolute;
+    top: 35vw;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+#p7{
+    position: absolute;
+    top: 66vw;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+}
+/*#p7_t1{
+    font-size: 1.6em !important;
+    text-align: right;
+}*/
+#pola7{
+  position: absolute;
+  width: 36vw;
+  top: 78vw;
+  left:15vw;
+  z-index: 5;
+  transform: rotate(-5deg);
+}
+#p8{
+    position: relative;
+    height: 50vw;
+    background-color: var(--ci2); 
+}
+#redtourist1{
+    position: absolute;
+    top: 2vw;
+    left: 38vw;
+    height: 36vw;
+    z-index: 3;
+}
+#p9{
+    position: relative;
+    height: 120vw;
+
+    background-color: var(--ci2);
+    z-index: 2;
+}
+#g9{
+  position: absolute;
+  height: 125vw;
+  width: 100%;
+  z-index: 0;
+}
+/*#ani-9{
+    background-color: var(--ci2);
+    position: relative;
+    height: 200vh;
+    width: 100vw;
+    top: 80.5%;
+     left: -5%;
+}
+.car {
+  width: 40%;
+  position: absolute;
+  animation: car 4s infinite;
+}
+.crash {
+  width: 25%;
+  top: 70%;
+  position: absolute;
+  animation: crash 4s infinite;
+  z-index: 0;
+}
+.bluedeer-1 {
+  width: 40%;
+  position: absolute;
+  animation: deer-dead 4s infinite;
+}
+@keyframes car {
+  0% {top: 25%; left: -40%;}
+  25% {top: 25%; left: -40%;}
+  50% {top: 25%; left: -5%;}
+  75% {top: 25%; left:-5%;}
+  100% {top: 25%; left: -5%;}
+}
+@keyframes  crash{
+  0% {top: 10%; left: 25%; opacity: 0;}
+  20% {top: 10%; left: 25%; opacity: 0;}
+  40% {top: 10%; left: 25%; opacity: 0;}
+  60% {top: 10%; left: 25%; opacity: 1;}
+  80% {top: 10%; left: 25%; opacity: 0;}
+  100% {top: 10%; left: 25%; opacity: 1;}
+}
+@keyframes deer-dead {
+  0% {top: 20%; left: 24%; transform: rotate(0deg);}
+  25% {top: 20%; left: 24%; transform: rotate(0deg);}
+  50% {top: 20%; left: 24%; transform: rotate(0deg);}
+  75% {top: 20%; left: 26%; transform: rotate(0deg);}
+  100% {top: 20%; left: 26%; transform: rotate(180deg);}
+}
+.car_news{
   width: 35%;
-  z-index: -2;
+  height: 35%;
   position: absolute;
-  right: 38em;
-  bottom: 5em;
-}
-.trashp5-2 {
-  width: 100%;
-  z-index: -3;
-  position: absolute;
-  right: 0em;
-  bottom: -41em;
-}
-.greenmountainsp5-2 {
-  width: 100%;
-  z-index: -3;
-  position: absolute;
-  right: 0em;
-  bottom: -54em;
-}
+  top: 70%;
+  right: 5%;
+}*/
 
 
+/* page 11 up*/
+#p11{
+  position: relative;
+  height: 280vw;
+  background-color: #39583F;
+  z-index: 1;
+}
+#head11{
+  z-index: 5; 
+  position: absolute;
+  width: 100%;
+}
+#tp12{
+  font-size: 3vw; 
+  top:79.2vw;
+  left: 37vw;
+  position: absolute;
+  z-index: 5;
+}
+#g12{
+  position: absolute;
+  top: 44vw;
+  width: 100%;
+}
+#g13{
+  position: absolute;
+  top: 107vw;
+  width: 100%;
+}
+#tp13{
+  position: absolute;
+  top: 92vw;
+}
+#tiger13{
+  position: absolute;
+  top: 152.5vw;
+  left: 72vw;
+  width: 15vw;
+}
+#g14{
+  position: absolute;
+  top: 164vw;
+  width: 100%;
+}
+#g15{
+  position: absolute;
+  top: 175vw;
+  width: 100%;
+}
+#yha1{
+  position: absolute;
+  top: 253vw;
+  left: 65vw;
+  width:30vw;
+  z-index: 1;
+}
+#yha2{
+  position: absolute;
+  top: 249vw;
+  left: 79vw;
+  width:20vw;
+  z-index: 0;
+}
+
+/*pang 16 up*/
+#p16{
+  position: relative;
+  height: 249vw;
+  background-color: #39583F;
+  z-index: 1;
+}
+--------------------------------------------
+/* game */
+--------------------------------------------
